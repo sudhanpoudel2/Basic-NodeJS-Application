@@ -10,7 +10,7 @@ const app = express();
 const port = 3000;
 
 app.get('/',(req,res)=>{
-    console.log("Hello World!");
+    console.log("Hello World! hahahah");
     res.send("Hey motherfucker");
 
 });
