@@ -13,8 +13,14 @@ app.get('/',(req,res)=>{
     console.log("Hello World! hahahah");
     res.send("Hey motherfucker");
 
-});
+})
 
-app.listen(port,()=>{
-    console.log(`http://localhost:${port}`);
-});
+connectToDB()
+ .then(()=>{
+    app.listen(port,()=>{
+    console.log(`Server is running at port: ${port} `);
+  })
+})
+.catch((err)=>{
+    console.log("MongoDB connection failed",err);
+})
