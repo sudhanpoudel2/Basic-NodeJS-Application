@@ -7,6 +7,7 @@ const connectToDB= () => {
         })
    } catch (error) {
         console.log("Error in connection to the database",error);
+        throw error;
    }
 }
 
