@@ -7,7 +7,7 @@ const messageSchema = new Schema(
             required : true
         }
 
-}
-    ,{timestamps:true});
+},
+    {timestamps:true});
 
-    export const Message = module.Schema("Message",messageSchema);
+    export const Message = model.Schema("Message",messageSchema);
