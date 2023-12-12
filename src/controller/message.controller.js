@@ -1,4 +1,4 @@
- import Message from '../model/message.model.js';
+//  import Message from "../model/message.model"
 
 const getMessage = async (req,res) => {
     res.send("Hello motherFucker i am controller");

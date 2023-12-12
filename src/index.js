@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import express from "express";
 import connectToDB from "./db.js";
-// import router from './router/message.router.js'; // Use import for the router
+import router from './router/message.router.js'; // Use import for the router
 
 dotenv.config({
     path: "./.env"
@@ -9,6 +9,8 @@ dotenv.config({
 
 const app = express();
 const port = 3000;
+
+app.use('/', router);
 
 connectToDB()
     .then(() => {
@@ -20,4 +22,4 @@ connectToDB()
         console.log("MongoDB connection failed", err);
     });
 
-// app.use('/', router);
+ 
