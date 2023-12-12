@@ -1,5 +1,5 @@
 import { Router } from "express"; 
-import * as messageController from '../controller/message.controller.js'  
+import messageController from '../controller/message.controller.js'  
 
 const router = Router();
 
@@ -8,4 +8,5 @@ router.route('/message')
 .put(messageController.putMessage)
 .post(messageController.postMessage)
 .delete(messageController.deleteMessage);
-module.exports={router};
+
+export { router };
