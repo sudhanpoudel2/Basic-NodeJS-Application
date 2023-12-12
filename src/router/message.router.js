@@ -8,5 +8,4 @@ router.route('/message')
 .put(messageController.putMessage)
 .post(messageController.postMessage)
 .delete(messageController.deleteMessage);
-
-export default router;
+module.exports={router};
