@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import express from "express";
 import connectToDB from "./db.js";
-import router from './router/message.router.js'; // Use import for the router
+import {router} from './router/message.router.js';
 
 dotenv.config({
     path: "./.env"
