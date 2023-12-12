@@ -1,5 +1,6 @@
 import mongoose,{Schema} from "mongoose";
 
+
 const messageSchema = new Schema(
     {
         text : {
@@ -10,4 +11,8 @@ const messageSchema = new Schema(
 },
     {timestamps:true});
 
-    export const Message = model.Schema("Message",messageSchema);
+     const Message = model.Schema("Message",messageSchema);
+
+     export default Message;
+
+    
