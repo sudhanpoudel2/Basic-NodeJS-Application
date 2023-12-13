@@ -1,5 +1,8 @@
+import {messageModel} from '../model/message.model.js'
+
 const getMessage = async (req, res) => {
-    res.send("Hello motherFucker, I am the controller");
+     const message = await messageModel.find({});
+     res.send(200).json(message);
 };
 
 const putMessage = async (req, res) => {

@@ -9,7 +9,9 @@ const messageSchema = new Schema(
     },
     { timestamps: true });
 
-const Message = model.Schema("Message", messageSchema);
+  export const Message = model.Schema("Message", messageSchema);
+  
 
-export default Message;
+
+
 
