@@ -1,7 +1,8 @@
-import {messageModel} from '../model/message.model.js'
+// import Message from '../model/message.model'
+const Message = require('../model/message.model.js')
 
 const getMessage = async (req, res) => {
-     const message = await messageModel.find({});
+     const message = await Message.find({});
      res.send(200).json(message);
 };
 

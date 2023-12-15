@@ -1,11 +1,11 @@
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 import express from "express";
-import connectToDB from "./db.js";
 import {router} from './router/message.router.js';
+require("./db.js")
 
-dotenv.config({
-    path: "./.env"
-});
+// dotenv.config({
+//     path: "./.env"
+// });
 
 const app = express();
 const port = 3000;
